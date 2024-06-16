@@ -9,11 +9,10 @@ pipeline {
     }
 
     stages {
-        stage('test') {
+        stage('Install Dependencies') {
             steps {
                 sh """
-                  ls -ltr
-
+                  npm install
                 """
 
             }
