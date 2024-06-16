@@ -1,0 +1,45 @@
+pipeline{
+    agent{
+
+    }
+    options{
+
+    }
+    parameters{
+
+    }
+    environment{
+
+    }
+    stages{
+        stage('test')
+        {
+            steps{
+                """
+                echo "Hi test mode"
+                """
+            }
+        }
+        stage('apply')
+        {
+            steps{
+                """
+                echo "Hi test mode"
+                """
+            }
+        }
+        stage('deploy')
+        {
+            steps{
+                """
+                echo "Hi test mode"
+                """
+            }
+        }                
+    }
+    post{
+        success{
+            
+        }
+    }
+}
